@@ -64,20 +64,20 @@ services:
     environment:
       - TZ=Asia/Shanghai
 
-#  jeecg-boot-xxljob:
-#    build:
-#      context: ./jeecg-cloud-xxljob
-#    ports:
-#      - 9080:9080
-#    container_name: jeecg-boot-xxljob
-#    hostname: jeecg-boot-xxljob
+  jeecg-boot-xxljob:
+    build:
+      context: ./jeecg-cloud-xxljob
+    ports:
+      - 9080:9080
+    container_name: jeecg-boot-xxljob
+    hostname: jeecg-boot-xxljob
 
-#  jeecg-boot-rabbitmq:
-#    #    image: rabbitmq:3-management
-#    image: rabbitmq:3
-#    ports:
-#      - 5672:5672
-#    #      - 15672:15672
-#    restart: always
-#    container_name: jeecg-boot-rabbitmq
-#    hostname: jeecg-boot-rabbitmq
+  jeecg-boot-rabbitmq:
+    #    image: rabbitmq:3-management
+    image: rabbitmq:3
+    ports:
+      - 5672:5672
+    #      - 15672:15672
+    restart: always
+    container_name: jeecg-boot-rabbitmq
+    hostname: jeecg-boot-rabbitmq
