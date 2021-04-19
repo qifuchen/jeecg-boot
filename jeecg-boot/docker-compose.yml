@@ -41,3 +41,11 @@ services:
     hostname: jeecg-boot-system
     ports:
       - 8080:8080
+
+  jeecg-boot-demo:
+    build:
+      context: ./jeecg-boot-demo
+    ports:
+      - 7002:7002
+    container_name: jeecg-boot-demo
+    hostname: jeecg-boot-demo
