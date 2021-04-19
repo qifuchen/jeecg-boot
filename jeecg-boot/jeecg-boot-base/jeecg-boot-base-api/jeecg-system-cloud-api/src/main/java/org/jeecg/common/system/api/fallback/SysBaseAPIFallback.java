@@ -7,6 +7,7 @@ import org.jeecg.common.api.dto.OnlineAuthDTO;
 import org.jeecg.common.api.dto.message.*;
 import org.jeecg.common.system.api.ISysBaseAPI;
 import org.jeecg.common.system.vo.*;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Map;
@@ -16,6 +17,7 @@ import java.util.Set;
  * 进入fallback的方法 检查是否token未设置
  */
 @Slf4j
+@Component
 public class SysBaseAPIFallback implements ISysBaseAPI {
 
     @Setter
