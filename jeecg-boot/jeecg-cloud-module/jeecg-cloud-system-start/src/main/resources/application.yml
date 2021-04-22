@@ -4,3 +4,8 @@ server:
 spring:
   application:
     name: jeecg-system
+  cloud:
+    nacos:
+      config:
+        server-addr: 39.108.81.84:8848
+        file-extension: yml
