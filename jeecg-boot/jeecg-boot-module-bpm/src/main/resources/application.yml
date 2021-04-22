@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: jeecg-bpm
+  profiles:
+    active: @profile.name@

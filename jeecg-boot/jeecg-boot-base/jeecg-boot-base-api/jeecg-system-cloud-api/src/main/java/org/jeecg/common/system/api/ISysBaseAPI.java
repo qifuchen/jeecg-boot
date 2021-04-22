@@ -29,7 +29,6 @@ import java.util.Set;
  *
  * cloud接口数量43  local：35 common：9  额外一个特殊queryAllRole一个当两个用
  */
-@Component
 @FeignClient(contextId = "sysBaseRemoteApi", value = ServiceNameConstants.SYSTEM_SERVICE, fallbackFactory = SysBaseAPIFallbackFactory.class)
 public interface ISysBaseAPI extends CommonAPI {
 
