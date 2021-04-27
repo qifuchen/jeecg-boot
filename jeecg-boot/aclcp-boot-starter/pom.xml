@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.ac.aclcpframework.boot</groupId>
+        <artifactId>aclcp-boot-parent</artifactId>
+        <version>2.4.3</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>aclcp-boot-starter</artifactId>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>aclcp-boot-starter-cloud</module>
+        <module>aclcp-boot-starter-job</module>
+        <module>aclcp-boot-starter-lock</module>
+        <module>aclcp-boot-starter-rabbitmq</module>
+    </modules>
+    <dependencies>
+        <!--aclcp-tools-->
+        <dependency>
+            <groupId>com.ac.aclcpframework.boot</groupId>
+            <artifactId>aclcp-boot-base-tools</artifactId>
+            <scope>system</scope>
+            <systemPath>${project.basedir}\aclcp-boot-base\aclcp-boot-base-tools\target\aclcp-boot-base-tools-2.4.3.jar</systemPath>
+        </dependency>
+        <!--加载配置信息-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>

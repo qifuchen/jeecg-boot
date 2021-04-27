@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>aclcp-boot-parent</artifactId>
+        <groupId>com.ac.aclcpframework.boot</groupId>
+        <version>2.4.3</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>aclcp-cloud-module</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>aclcp-cloud-system-start</module>
+        <module>aclcp-cloud-gateway</module>
+        <module>aclcp-cloud-monitor</module>
+        <module>aclcp-cloud-xxljob</module>
+        <module>aclcp-cloud-nacos</module>
+    </modules>
+
+
+
+</project>

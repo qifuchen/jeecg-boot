@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.ac.aclcp.boot.starter.job.config.XxlJobConfiguration

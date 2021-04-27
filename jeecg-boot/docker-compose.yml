@@ -31,7 +31,7 @@ services:
 
   jeecg-boot-system:
     build:
-      context: ./jeecg-boot-module-system
+      context: aclcp-boot-module-system
     restart: on-failure
     depends_on:
       - jeecg-boot-mysql
@@ -44,7 +44,7 @@ services:
 
   jeecg-boot-demo:
     build:
-      context: ./jeecg-boot-module-demo
+      context: aclcp-boot-module-demo
     ports:
       - 7002:7002
     container_name: jeecg-boot-demo
